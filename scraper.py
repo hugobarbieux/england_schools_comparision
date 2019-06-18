@@ -14,7 +14,7 @@ root = lxml.html.fromstring(html)
 # Store the matched links in "matchedlinks"
 matchedlinks = root.cssselect("div tbody tr")
 # Print that
-print(matchedlinks)
+# print(matchedlinks)
 #
 # Loop through the items in matchedlinks, calling each one li
 for li in matchedlinks:
