@@ -11,7 +11,10 @@ html = scraperwiki.scrape("https://www.compare-school-performance.service.gov.uk
 #
 # # Find something on the page using css selectors
 root = lxml.html.fromstring(html)
-root.cssselect("tr tbody table")
+# Store the matched links in "matchedlinks"
+matchedlinks = root.cssselect("tr tbody table")
+# Print that
+print(matchedlinks)
 #
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
