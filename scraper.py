@@ -17,7 +17,7 @@ matchedlinks = root.cssselect("div th")
 #print(matchedlinks)
 #
 # Create a dictionary called record
-#record = {}
+record = {}
 # Loop through the items in matchedlinks, calling each one li
 for li in matchedlinks:
   #Store the text contents of li in a new variable listtext
