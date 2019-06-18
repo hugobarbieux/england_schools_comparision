@@ -16,6 +16,12 @@ matchedlinks = root.cssselect("div tbody tr")
 # Print that
 print(matchedlinks)
 #
+# Loop through the items in matchedlinks, calling each one li
+for li in matchedlinks:
+  #Store the text contents of li in a new variable listtext
+  listtext = li.text_content()
+  # Print that
+  print(listtext)
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
 #
