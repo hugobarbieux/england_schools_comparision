@@ -12,7 +12,7 @@ html = scraperwiki.scrape("https://www.compare-school-performance.service.gov.uk
 # # Find something on the page using css selectors
 root = lxml.html.fromstring(html)
 # Store the matched links in "matchedlinks"
-matchedlinks = root.cssselect("tbody/tr[1]")
+matchedlinks = root.cssselect("tr[1] tbody")
 # Print that
 #print(matchedlinks)
 #
