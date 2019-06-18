@@ -27,7 +27,7 @@ for li in matchedlinks:
   # Store it in the 'record' dictionary under the key 'address'
   record['schools'] = listtext
   # Save the record to the datastore with 'schools' as unique key
-  scraperwiki.sqlite.save(['schools'],['result'],record)
+  scraperwiki.sqlite.save(['schools'],record)
   
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
