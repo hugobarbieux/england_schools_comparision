@@ -7,11 +7,11 @@ import lxml.html
 # # Read in a page
 html = scraperwiki.scrape("https://www.compare-school-performance.service.gov.uk/schools-by-type?step=default&table=schools&region=all-england&for=secondary&page=1")
 # Print the variable html containing the webpage
-print(html)
+# print(html)
 #
 # # Find something on the page using css selectors
-# root = lxml.html.fromstring(html)
-# root.cssselect("div[align='left']")
+root = lxml.html.fromstring(html)
+root.cssselect("tr tbody table")
 #
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
